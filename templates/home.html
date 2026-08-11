@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sistem Deteksi Penyakit Kentang
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="header">
+
+            <div class="logo-circle">
+                🌿
+            </div>
+
+            <h1>
+                Sistem Deteksi Penyakit Kentang
+            </h1>
+
+            <p class="subtitle">
+
+                Sistem deteksi penyakit daun kentang
+                berbasis CNN MobileNetV2 untuk membantu
+                identifikasi penyakit secara cepat
+                dan akurat.
+
+            </p>
+
+        </div>
+
+        <!-- ================= DETECT ================= -->
+
+        <div class="detect-card">
+
+            <div class="detect-top">
+
+                <h2>
+                    🔍 Mulai Deteksi
+                </h2>
+
+                <span class="status">
+                    ONLINE
+                </span>
+
+            </div>
+
+            <p class="detect-desc">
+
+                Upload gambar daun kentang dan sistem
+                akan menganalisis kondisi tanaman
+                menggunakan teknologi Artificial Intelligence.
+
+            </p>
+
+            <a href="{{ url_for('detect') }}"
+               class="detect-btn">
+
+                Mulai Sekarang
+
+            </a>
+
+        </div>
+
+        <!-- ================= MENU ================= -->
+
+        <div class="menu-section">
+
+            <div class="menu-title">
+                ⚙️ Menu Utama
+            </div>
+
+            <div class="menu-links">
+
+                <!-- PROFIL -->
+
+                <a href="{{ url_for('profil') }}"
+                   class="menu-item">
+
+                    <div class="menu-left">
+
+                        <div class="menu-icon">
+                            👤
+                        </div>
+
+                        <div>
+
+                            <div class="menu-text">
+                                Profil
+                            </div>
+
+                            <div class="menu-sub">
+                                Informasi akun pengguna
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        ›
+                    </div>
+
+                </a>
+
+                <!-- HISTORY -->
+
+                <a href="{{ url_for('history') }}"
+                   class="menu-item">
+
+                    <div class="menu-left">
+
+                        <div class="menu-icon">
+                            📋
+                        </div>
+
+                        <div>
+
+                            <div class="menu-text">
+                                Riwayat
+                            </div>
+
+                            <div class="menu-sub">
+                                Hasil deteksi sebelumnya
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        ›
+                    </div>
+
+                </a>
+
+                <!-- LOsGOUT -->
+
+                <a href="{{ url_for('logout') }}"
+                   class="menu-item">
+
+                    <div class="menu-left">
+
+                        <div class="menu-icon">
+                            🚪
+                        </div>
+
+                        <div>
+
+                            <div class="menu-text">
+                                Logout
+                            </div>
+
+                            <div class="menu-sub">
+                                Keluar dari sistem
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        ›
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ================= INFORMASI ================= -->
+
+        <div class="info-section"
+             id="informasi">
+
+            <div class="section-title">
+                📚 Informasi Penyakit
+            </div>
+
+            <!-- EARLY BLIGHT -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🍂
+                </div>
+
+                <div class="info-content">
+
+                    <h3>
+                        Early Blight
+                    </h3>
+
+                    <p>
+
+                        Early Blight merupakan penyakit
+                        jamur yang menyebabkan bercak
+                        coklat berbentuk lingkaran pada
+                        daun kentang sehingga daun
+                        menjadi kering dan rusak.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- LATE BLIGHT -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🌱
+                </div>
+
+                <div class="info-content">
+
+                    <h3>
+                        Late Blight
+                    </h3>
+
+                    <p>
+
+                        Late Blight adalah penyakit
+                        berbahaya yang membuat daun
+                        cepat membusuk, berwarna hitam,
+                        dan mudah menyebar saat
+                        cuaca lembap.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- HEALTHY -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ✅
+                </div>
+
+                <div class="info-content">
+
+                    <h3>
+                        Healthy Leaf
+                    </h3>
+
+                    <p>
+
+                        Daun sehat memiliki warna hijau
+                        segar tanpa bercak, lubang,
+                        ataupun tanda kerusakan
+                        pada permukaan daun.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="footer">
+
+            © 2026 Sistem Deteksi Penyakit Tanaman Kentang
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
