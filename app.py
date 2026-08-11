@@ -79,6 +79,8 @@ class Config:
 # =====================================================
 
 app = Flask(__name__)
+app.secret_key = 'skripsi_eltine_daun_kentang_rahasia_123'
+
 
 app.config.from_object(Config)
 
